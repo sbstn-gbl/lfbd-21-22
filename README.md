@@ -4,6 +4,7 @@
 
 ```
 .
-└── README.md                 # this readme file
+├── README.md                 # this readme file
+└── source                    # e.g., images for notebooks
 ```
 
