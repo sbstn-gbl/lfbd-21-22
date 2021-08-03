@@ -58,11 +58,11 @@ Check the Makefile for more details
 
 ## Course preparation
 
-Please solve the following three pre-course assignments before the first lecture. 
+Please solve the following three pre-course assignments before the first lecture.
 
-- [Notebook 01: ML Metrics](preparation/notebook-01.ipynb)
-- [Notebook 02: Gradient Descent](preparation/notebook-02.ipynb)
-- [Notebook 03: Data Tasks](preparation/notebook-03.ipynb)
+- [Notebook 01: Data Tasks](preparation/notebook-1-data.ipynb)
+- [Notebook 02: ML Metrics](preparation/notebook-2-metrics.ipynb)
+- [Notebook 03: Gradient Descent](preparation/notebook-3-gradient.ipynb)
 
 Use textbooks or online resources to fill gaps in your skills. The pre-course assignments will prepare you for the materials covered in Learning from Big Data and help you assess whether you are ready for this course. The pre-course assignments are challenging, if you find them ___too___ challenging, you should consider enrolling in this course in the following year. If you are not sure, feel free to contact one of the teachers before starting this course.
 
