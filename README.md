@@ -7,7 +7,7 @@
 ├── Makefile                  # run `make help` to see make targets
 ├── README.md                 # this readme file
 ├── requirements.txt          # virtualenv requirements file
-├── img                       # images (e.g., for notebooks)
+├── source                    # sources, e.g., images for notebooks
 └── preparation               # course preparation notebooks
 ```
 
