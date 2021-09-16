@@ -70,3 +70,14 @@ Please also study the material covered in the following online courses:
 
 - [Introduction To Python Programming](https://www.udemy.com/course/pythonforbeginnersintro/)
 - [Master Data Analysis with Python - Intro to Pandas](https://www.udemy.com/course/master-data-analysis-with-python-intro-to-pandas/)
+
+## Lecture Notebooks
+
+### Module 1
+
+Coming soon
+
+### Module 2
+- [Lecture 05-1: Missing Data](lectures/l05-1-missing-data.ipynb)
+- [Lecture 05-2: Logistic Regression (Motivation)](lectures/l05-2-binary-classification-motivation.ipynb)
+- [Lecture 05-3: Logistic Regression w/ MBGD](lectures/l05-3-binary-classification-mbgd.ipynb)
