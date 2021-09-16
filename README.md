@@ -7,8 +7,9 @@
 ├── Makefile                  # run `make help` to see make targets
 ├── README.md                 # this readme file
 ├── requirements.txt          # virtualenv requirements file
-├── source                    # sources, e.g., images for notebooks
-└── preparation               # course preparation notebooks
+├── lectures                  # lecture notebooks
+├── preparation               # course preparation notebooks
+└── source                    # sources, e.g., images for notebooks
 ```
 
 Please consider the following instructions and the material in this repository carefully. The repository content is designed to make participation in Learning from Big Data as easy and enjoyable for you as possible.
@@ -81,3 +82,4 @@ Coming soon
 - [Lecture 05-1: Missing Data](lectures/l05-1-missing-data.ipynb)
 - [Lecture 05-2: Logistic Regression (Motivation)](lectures/l05-2-binary-classification-motivation.ipynb)
 - [Lecture 05-3: Logistic Regression w/ MBGD](lectures/l05-3-binary-classification-mbgd.ipynb)
+
