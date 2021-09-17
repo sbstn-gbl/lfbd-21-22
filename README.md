@@ -1,22 +1,22 @@
 # GitHub Repository for Course "Learning from Big Data"
 
-## README Content
+## README content
 
 <!-- vim-markdown-toc GFM -->
 
-* [Repository Content](#repository-content)
+* [Repository content](#repository-content)
 * [Requirements](#requirements)
 * [Setup](#setup)
   * [Makefile targets](#makefile-targets)
   * [Step-by-step instructions](#step-by-step-instructions)
 * [Course preparation](#course-preparation)
-* [Lecture Notebooks](#lecture-notebooks)
+* [Lecture notebooks](#lecture-notebooks)
   * [Module 2](#module-2)
   * [Module 3](#module-3)
 
 <!-- vim-markdown-toc -->
 
-## Repository Content
+## Repository content
 
 ```
 .
@@ -96,7 +96,7 @@ Please also study the material covered in the following online courses:
 - [Introduction To Python Programming](https://www.udemy.com/course/pythonforbeginnersintro/)
 - [Master Data Analysis with Python - Intro to Pandas](https://www.udemy.com/course/master-data-analysis-with-python-intro-to-pandas/)
 
-## Lecture Notebooks
+## Lecture notebooks
 
 ### Module 2
 - [Lecture 05-1: Logistic Regression (Motivation)](lectures/l05-1-binary-classification-motivation.ipynb)
