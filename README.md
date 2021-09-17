@@ -24,7 +24,7 @@ Optional:
 
 Please familiarize yourselves with `virtualenv` (or a similar tool such as `conda`). Some background information can be found in the [virtualenv docs](https://virtualenv.pypa.io/en/latest/) or [here](https://stackoverflow.com/questions/34398676/does-conda-replace-the-need-for-virtualenv).
 
-In the lectures, we will use Jupyter notebooks to illustrate implementation-related key points. The notebooks will be published in this repository well ahead of the lecture. Please make sure that you can execute the notebooks before you join the class so you can follow the coding part more easily.
+In the lectures, we will use Jupyter notebooks to illustrate implementation-related key points. The notebooks will be published in this repository well ahead of the lecture. Please make sure that you can execute the notebooks before joining the class so you can easily follow the coding part in the lectures.
 
 For the homework assignments, use an [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) of your choice. IDE choice really depends on personal preferences. A very popular choice is PyCharm (JetBrains offers a [free pro license for students](https://www.jetbrains.com/community/education/#students). If you are familiar with coding this should be easy to manage. Other people like [Spyder](https://www.spyder-ide.org), [JupyterLab](https://jupyter.org) or [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index). Do some research to figure out which IDE suits your background and preferences best.
 
