@@ -32,7 +32,7 @@ For the homework assignments, use an [IDE](https://en.wikipedia.org/wiki/Integra
 
 ### Makefile targets
 
-The Makefile included in this repository is purely for convenience (setting up the virtual environment, . It should work on systems running Linux and Mac OS X.
+The [Makefile](./Makefile) included in this repository is purely for convenience (setting up the virtual environment, . It should work on systems running Linux and Mac OS X.
 
 ```
 $ make help
