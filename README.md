@@ -22,11 +22,17 @@ Please consider the following instructions and the material in this repository c
 Optional:
 1. `graphviz` (install with `brew install graphviz`)
 
-In the lectures we will use jupyter notebooks to illustrate implementation-related key points. Please use any [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) of your choice for the homework assignments. IDE choice really depends on personal preferences. A very popular choice is PyCharm (JetBrains offers a [free pro license for students](https://www.jetbrains.com/community/education/#students). If you are familiar with coding this should be easy to manage. Other people like [Spyder](https://www.spyder-ide.org), [jupyterlab](https://jupyter.org) or [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index). Do some research to figure out which IDE suits your background and preferences best.
+Please familiarize yourselves with `virtualenv` (or a similar tool such as `conda`). Some background information can be found in the [virtualenv docs](https://virtualenv.pypa.io/en/latest/) or [here](https://stackoverflow.com/questions/34398676/does-conda-replace-the-need-for-virtualenv).
+
+In the lectures, we will use Jupyter notebooks to illustrate implementation-related key points. The notebooks will be published in this repository well ahead of the lecture. Please make sure that you can execute the notebooks before you join the class so you can follow the coding part more easily.
+
+For the homework assignments, use an [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) of your choice. IDE choice really depends on personal preferences. A very popular choice is PyCharm (JetBrains offers a [free pro license for students](https://www.jetbrains.com/community/education/#students). If you are familiar with coding this should be easy to manage. Other people like [Spyder](https://www.spyder-ide.org), [JupyterLab](https://jupyter.org) or [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index). Do some research to figure out which IDE suits your background and preferences best.
 
 ## Setup
 
 ### Makefile targets
+
+The Makefile included in this repository is purely for convenience (setting up the virtual environment, . It should work on systems running Linux and Mac OS X.
 
 ```
 $ make help
@@ -78,6 +84,8 @@ Please also study the material covered in the following online courses:
 - [Lecture 05-1: Logistic Regression (Motivation)](lectures/l05-1-binary-classification-motivation.ipynb)
 - [Lecture 05-2: Missing Data](lectures/l05-2-missing-data.ipynb)
 - [Lecture 05-3: Logistic Regression w/ MBGD](lectures/l05-3-binary-classification-mbgd.ipynb)
+
+More notebooks coming soon.
 
 ### Module 3
 
