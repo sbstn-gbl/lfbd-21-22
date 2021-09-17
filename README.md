@@ -1,6 +1,22 @@
 # GitHub Repository for Course "Learning from Big Data"
 
-## Content
+## README content
+
+<!-- vim-markdown-toc GFM -->
+
+* [Repository content](#repository-content)
+* [Requirements](#requirements)
+* [Setup](#setup)
+  * [Makefile targets](#makefile-targets)
+  * [Step-by-step instructions](#step-by-step-instructions)
+* [Course preparation](#course-preparation)
+* [Lecture notebooks](#lecture-notebooks)
+  * [Module 2](#module-2)
+  * [Module 3](#module-3)
+
+<!-- vim-markdown-toc -->
+
+## Repository content
 
 ```
 .
@@ -22,11 +38,17 @@ Please consider the following instructions and the material in this repository c
 Optional:
 1. `graphviz` (install with `brew install graphviz`)
 
-In the lectures we will use jupyter notebooks to illustrate implementation-related key points. Please use any [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) of your choice for the homework assignments. IDE choice really depends on personal preferences. A very popular choice is PyCharm (JetBrains offers a [free pro license for students](https://www.jetbrains.com/community/education/#students). If you are familiar with coding this should be easy to manage. Other people like [Spyder](https://www.spyder-ide.org), [jupyterlab](https://jupyter.org) or [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index). Do some research to figure out which IDE suits your background and preferences best.
+Please familiarize yourselves with `virtualenv` (or a similar tool such as `conda`). Some background information can be found in the [virtualenv docs](https://virtualenv.pypa.io/en/latest/) or [here](https://stackoverflow.com/questions/34398676/does-conda-replace-the-need-for-virtualenv).
+
+In the lectures, we will use Jupyter notebooks to illustrate implementation-related key points. The notebooks will be published in this repository well ahead of the lecture. Please make sure that you can execute the notebooks before joining the class so you can easily follow the coding parts in the lectures.
+
+For the homework assignments, use an [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) of your choice. IDE choice really depends on personal preferences. A very popular choice is PyCharm (JetBrains offers a [free pro license for students](https://www.jetbrains.com/community/education/#students)). If you are familiar with coding this should be easy to manage. Other people like [Spyder](https://www.spyder-ide.org), [JupyterLab](https://jupyter.org) or [Google Colab](https://colab.research.google.com/notebooks/intro.ipynb?utm_source=scs-index). Do some research to figure out which IDE suits your background and preferences best.
 
 ## Setup
 
 ### Makefile targets
+
+The [Makefile](./Makefile) included in this repository is purely for convenience (e.g., setting up the virtual environment, launching a notebook server). It should work on Linux and Mac OS X systems.
 
 ```
 $ make help
@@ -57,6 +79,8 @@ Check the Makefile for more details
     $ make run
     ```
 
+If `make` does not work on your computer run the steps included in the [Makefile](./Makefile) manually. You only need to do this setup once.
+
 ## Course preparation
 
 Please solve the following three pre-course assignments before the first lecture.
@@ -72,12 +96,14 @@ Please also study the material covered in the following online courses:
 - [Introduction To Python Programming](https://www.udemy.com/course/pythonforbeginnersintro/)
 - [Master Data Analysis with Python - Intro to Pandas](https://www.udemy.com/course/master-data-analysis-with-python-intro-to-pandas/)
 
-## Lecture Notebooks
+## Lecture notebooks
 
 ### Module 2
-- [Lecture 05-1: Missing Data](lectures/l05-1-missing-data.ipynb)
-- [Lecture 05-2: Logistic Regression (Motivation)](lectures/l05-2-binary-classification-motivation.ipynb)
+- [Lecture 05-1: Logistic Regression (Motivation)](lectures/l05-1-binary-classification-motivation.ipynb)
+- [Lecture 05-2: Missing Data](lectures/l05-2-missing-data.ipynb)
 - [Lecture 05-3: Logistic Regression w/ MBGD](lectures/l05-3-binary-classification-mbgd.ipynb)
+
+More notebooks coming soon.
 
 ### Module 3
 
