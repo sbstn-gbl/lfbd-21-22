@@ -32,7 +32,7 @@ For the homework assignments, use an [IDE](https://en.wikipedia.org/wiki/Integra
 
 ### Makefile targets
 
-The [Makefile](./Makefile) included in this repository is purely for convenience (setting up the virtual environment, . It should work on systems running Linux and Mac OS X.
+The [Makefile](./Makefile) included in this repository is purely for convenience (e.g., setting up the virtual environment, launching a notebook server). It should work on Linux and Mac OS X systems.
 
 ```
 $ make help
@@ -62,6 +62,8 @@ Check the Makefile for more details
     ```
     $ make run
     ```
+
+If `make` does not work on your computer run the steps included in the [Makefile](./Makefile) manually. You only need to do this setup once.
 
 ## Course preparation
 
