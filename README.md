@@ -1,6 +1,22 @@
 # GitHub Repository for Course "Learning from Big Data"
 
-## Content
+## README Content
+
+<!-- vim-markdown-toc GFM -->
+
+* [Repository Content](#repository-content)
+* [Requirements](#requirements)
+* [Setup](#setup)
+  * [Makefile targets](#makefile-targets)
+  * [Step-by-step instructions](#step-by-step-instructions)
+* [Course preparation](#course-preparation)
+* [Lecture Notebooks](#lecture-notebooks)
+  * [Module 2](#module-2)
+  * [Module 3](#module-3)
+
+<!-- vim-markdown-toc -->
+
+## Repository Content
 
 ```
 .
