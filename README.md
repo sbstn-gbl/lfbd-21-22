@@ -75,8 +75,8 @@ Please also study the material covered in the following online courses:
 ## Lecture Notebooks
 
 ### Module 2
-- [Lecture 05-1: Missing Data](lectures/l05-1-missing-data.ipynb)
-- [Lecture 05-2: Logistic Regression (Motivation)](lectures/l05-2-binary-classification-motivation.ipynb)
+- [Lecture 05-1: Logistic Regression (Motivation)](lectures/l05-1-binary-classification-motivation.ipynb)
+- [Lecture 05-2: Missing Data](lectures/l05-2-missing-data.ipynb)
 - [Lecture 05-3: Logistic Regression w/ MBGD](lectures/l05-3-binary-classification-mbgd.ipynb)
 
 ### Module 3
