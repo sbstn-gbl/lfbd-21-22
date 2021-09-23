@@ -36,6 +36,7 @@ Please consider the following instructions and the material in this repository c
 1. `virtualenv`
 
 Optional:
+1. node (for `plotly`)
 1. `graphviz` (install with `brew install graphviz`)
 
 Please familiarize yourselves with `virtualenv` (or a similar tool such as `conda`). Some background information can be found in the [virtualenv docs](https://virtualenv.pypa.io/en/latest/) or [here](https://stackoverflow.com/questions/34398676/does-conda-replace-the-need-for-virtualenv).
