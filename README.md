@@ -36,6 +36,7 @@ Please consider the following instructions and the material in this repository c
 1. `virtualenv`
 
 Optional:
+1. node (for `plotly`)
 1. `graphviz` (install with `brew install graphviz`)
 
 Please familiarize yourselves with `virtualenv` (or a similar tool such as `conda`). Some background information can be found in the [virtualenv docs](https://virtualenv.pypa.io/en/latest/) or [here](https://stackoverflow.com/questions/34398676/does-conda-replace-the-need-for-virtualenv).
@@ -102,8 +103,12 @@ Please also study the material covered in the following online courses:
 - [Lecture 05-1: Logistic Regression (Motivation)](lectures/l05-1-binary-classification-motivation.ipynb)
 - [Lecture 05-2: Missing Data](lectures/l05-2-missing-data.ipynb)
 - [Lecture 05-3: Logistic Regression w/ MBGD](lectures/l05-3-binary-classification-mbgd.ipynb)
-
-More notebooks coming soon.
+- [Lecture 06-1: Decision Trees](lectures/l06-1-decision-trees.ipynb)
+- [Lecture 06-2: Representations](lectures/l06-2-representations.ipynb)
+- [Lecture 06-3: Dimensionality Reduction](lectures/l06-3-dimensionality-reduction.ipynb)
+- [Lecture 07-1: AdaBoost](lectures/l07-1-adaboost.ipynb)
+- [Lecture 07-2: Gradient Boosting](lectures/l07-2-gradient-boosting.ipynb)
+- [Lecture 07-3: Overfitting](lectures/l07-3-overfitting.ipynb)
 
 ### Module 3
 
