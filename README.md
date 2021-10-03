@@ -106,6 +106,7 @@ Please also study the material covered in the following online courses:
 - [Lecture 06-1: Decision Trees](lectures/l06-1-decision-trees.ipynb)
 - [Lecture 06-2: Representations](lectures/l06-2-representations.ipynb)
 - [Lecture 06-3: Dimensionality Reduction](lectures/l06-3-dimensionality-reduction.ipynb)
+- [Lecture 06-4: (Extra) Entropy](lectures/l06-4-extra-entropy.ipynb)
 - [Lecture 07-1: AdaBoost](lectures/l07-1-adaboost.ipynb)
 - [Lecture 07-2: Gradient Boosting](lectures/l07-2-gradient-boosting.ipynb)
 - [Lecture 07-3: Overfitting](lectures/l07-3-overfitting.ipynb)
