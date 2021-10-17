@@ -110,7 +110,8 @@ Please also study the material covered in the following online courses:
 - [Lecture 07-1: AdaBoost](lectures/l07-1-adaboost.ipynb)
 - [Lecture 07-2: Gradient Boosting](lectures/l07-2-gradient-boosting.ipynb)
 - [Lecture 07-3: Overfitting](lectures/l07-3-overfitting.ipynb)
-- [Tutorial Assignment 2](lectures/tutorial-assignment-2.ipynb)
+- [Tutorial Assignment 2 (Part 1)](lectures/tutorial-assignment-2.ipynb)
+- [Tutorial Assignment 2 (Part 2)](lectures/tutorial-assignment-2-category-features.ipynb)
 
 ### Module 3
 - [Lecture 09-1: NN Activation Functions](lectures/l09-1-activation-functions.ipynb)
