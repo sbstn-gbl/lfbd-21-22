@@ -1,9 +1,91 @@
-from typing import Tuple
 import collections
 import itertools
+from typing import Tuple
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+
+
+def baskets_df_to_list(
+    x: pd.DataFrame,
+    min_basket_size: int = 0,
+    shuffle: bool = True,
+    to_string: bool = True,
+    seed: int = 123,
+) -> list:
+
+    # create raw basket list
+    x_basket_product = x[["basket", "product"]].sort_values("basket")
+    x_basket_product["n"] = x_basket_product.groupby("basket").product.transform(
+        "count"
+    )
+    x_basket_product = x_basket_product[x_basket_product["n"] >= min_basket_size]
+    del x_basket_product["n"]
+    keys, values = x_basket_product.values.T
+    ukeys, index = np.unique(keys, True)
+    values = values.astype(str)
+    arrays = np.split(values, index)
+    basket_list = [list(a) for a in arrays[1:]]
+
+    # randomise basket order and product order in baskets
+    if shuffle:
+        np.random.seed(seed)
+        np.random.shuffle(basket_list)
+        for i in range(len(basket_list)):
+            np.random.shuffle(basket_list[i])
+
+    # return
+    return basket_list
+
+
+def gensim_to_pandas(model):
+    vocab = []
+    for key, value in model.wv.key_to_index.items():
+        vocab.append(
+            pd.DataFrame(
+                {
+                    "product": [int(key)],
+                    "index": value,
+                    "N": model.wv.get_vecattr(key, "count"),
+                }
+            )
+        )
+    vocab = pd.concat(vocab).set_index("index").sort_index()
+    syn0 = pd.DataFrame(model.wv.vectors, index=vocab["product"]).sort_index()
+    syn0.columns = [str(x) for x in syn0.columns]
+    syn1 = pd.DataFrame(model.syn1neg, index=vocab["product"]).sort_index()
+    syn1.columns = [str(x) for x in syn1.columns]
+    return syn0, syn1, vocab
+
+
+def plot_tsne(data, plotlabels=False, scatter=0):
+
+    x_value = data["x"].values
+    y_value = data["y"].values
+    category_label = data["category"].values
+
+    if scatter > 0:
+        x_value = x_value + np.random.uniform(-scatter, scatter, len(x_value))
+        y_value = y_value + np.random.uniform(-scatter, scatter, len(y_value))
+
+    fig, ax = plt.subplots(figsize=(14, 10))
+    fig.tight_layout()
+    plt.scatter(x_value, y_value, c=category_label, alpha=0.1, s=500)
+
+    if plotlabels:
+        for x, y, c in zip(x_value, y_value, category_label):
+            ax.text(
+                x,
+                y,
+                c,
+                size=10,
+                horizontalalignment="center",
+                verticalalignment="center",
+            )
+
+    _ = plt.xlim(x_value.min() * 1.05, x_value.max() * 1.05)
+    _ = plt.ylim(y_value.min() * 1.05, y_value.max() * 1.05)
 
 
 class NegativeSamplesGenerator:

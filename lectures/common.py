@@ -1,4 +1,6 @@
 import matplotlib.pyplot as plt
+import yaml
+
 
 plt.style.use("seaborn-white")
 
@@ -13,3 +15,9 @@ plt.rcParams.update(
         "pcolor.shading": "auto",
     }
 )
+
+
+def read_yaml(f):
+    with open(f, "r") as con:
+        x = yaml.safe_load(con)
+    return x

@@ -122,4 +122,4 @@ Please also study the material covered in the following online courses:
 - [Lecture 11-2: NN Optimizer](lectures/l11-2-optimizers.ipynb)
 - [Lecture 11-3: NN Initialization](lectures/l11-3-weight-initialization.ipynb)
 - [Lecture 13-1: Example for Endogeneity](lectures/l13-1-endogeneity.ipynb)
-
+- [Tutorial Assignment 3](lectures/tutorial-assignment-3.ipynb)
