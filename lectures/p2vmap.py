@@ -5,6 +5,8 @@ from typing import Tuple
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import sklearn.model_selection
+import torch
 
 
 def baskets_df_to_list(
@@ -296,3 +298,46 @@ class DataStreamP2V:
                 fill_cache = False
             if len(self.cached_samples) >= self.batch_size:
                 fill_cache = False
+
+
+def build_data_loader(streamer, config):
+    # build numpy arrays for full dataset
+    streamer.reset_iterator()
+    list_ce = []
+    list_co = []
+    list_ns = []
+    while True:
+        try:
+            ce, co, ns = streamer.generate_batch()
+            list_ce.append(ce)
+            list_co.append(co)
+            list_ns.append(ns)
+        except:
+            break
+    ce = np.hstack(list_ce)
+    co = np.hstack(list_co)
+    ns = np.vstack(list_ns)
+
+    # train/validation split
+    ce_t, ce_v, co_t, co_v, ns_t, ns_v = sklearn.model_selection.train_test_split(
+        ce, co, ns, **config["split"]
+    )
+
+    # build data loader
+    dl_train = torch.utils.data.DataLoader(
+        torch.utils.data.TensorDataset(
+            torch.LongTensor(ce_t),
+            torch.LongTensor(co_t),
+            torch.LongTensor(ns_t),
+        ),
+        **config["train"],
+    )
+    dl_val = torch.utils.data.DataLoader(
+        torch.utils.data.TensorDataset(
+            torch.LongTensor(ce_v),
+            torch.LongTensor(co_v),
+            torch.LongTensor(ns_v),
+        ),
+        **config["valid"],
+    )
+    return dl_train, dl_val
