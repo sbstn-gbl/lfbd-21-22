@@ -1,0 +1,20 @@
+author: sebastian
+version: v1.1
+project: big-data
+dataset:
+    small
+data:
+    small:
+        D1: 4
+        D2: 3
+        N: 3
+    large:
+        D1: 1000
+        D2: 500
+        N: 1000
+model:
+    tsne:
+        n_components: 2
+        perplexity: 30.0
+        init: "random"
+        random_state: 1234
